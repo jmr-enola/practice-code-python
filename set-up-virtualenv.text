@@ -1,0 +1,11 @@
+#install a virtual environment
+1. sudo pip3 install virtualenv
+#add a virtual environment
+3 virtualenv .venv
+#run a virtual environment
+3. source .venv/bin/activate
+#exit virtual environment
+4. deactivate
+
+#generate a requirements.txt
+pip freeze > requirements.txt
