@@ -1,13 +1,13 @@
-"""sumary_line
-
-Keyword arguments:
-argument -- description
-Return: return_description
-"""
+"""Bubble Sort"""
 
 def bubble_sort(arr: list) -> list:
-    """sumary_line"""
-    
+    """
+    Sort array using bubble sort algorithim
+    argumment:
+        arr -- list: array to be sorted
+    return:
+        arr -- list: sorted array
+    """
     steps = 0
     swapped = True
     while swapped:
@@ -18,5 +18,6 @@ def bubble_sort(arr: list) -> list:
                 swapped = True
             steps += 1
 
-    print(f"Number of steps = {steps}")          
+    print(f"Number of steps = {steps}")
     return arr
+    

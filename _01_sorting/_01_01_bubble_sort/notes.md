@@ -16,3 +16,5 @@ Algorithm:
 - step 4 : return value of sorted array
 
 Time Complexity: max = O(n^2), min = O(n-1)
+
+Notes: Good for small sample sets.

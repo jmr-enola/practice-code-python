@@ -2,7 +2,8 @@
 """
 
 from unittest import TestCase
-from bubble_sort import bubble_sort
+from .bubble_sort import bubble_sort
+from __generators.array_generator import generate_array
 
 class TestBubbleSort(TestCase):
     """Test cases for bubble_sort function"""
@@ -13,3 +14,8 @@ class TestBubbleSort(TestCase):
         self.assertEqual (bubble_sort(arr), [0, 2, 6, 8, 15])
         arr = [8, 2, 15, 6, 0]
         self.assertEqual (bubble_sort(arr), sorted(arr))
+        arr = generate_array(100)
+        self.assertEqual (bubble_sort(arr), sorted(arr))
+        arr = generate_array(999)
+        self.assertEqual (bubble_sort(arr), sorted(arr))
+        
